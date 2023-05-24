@@ -2,23 +2,25 @@
 
 namespace four_adj_digits_product
 {
+    //Implements edge cases method
     public class Validation
     {
-        public void Validate(string stringOfNumbers)
+        //Check with edge cases and throw any error
+        public void EdgeCases(string number)
         {
-            if (stringOfNumbers == null)
+            if (number == null)
             {
-                Console.WriteLine("Input should be atleast four digits\nNull is not accepted");
+                throw new Exception("Input should be atleast four digits\nNull is not accepted");
             }
-            if(stringOfNumbers.Length < 4)
+            if(number.Length < 4)
             {
-                Console.WriteLine("Input should be atleast four digits\ngiven input is too small or less than four digits");
+                throw new Exception("Input should be atleast four digits\ngiven input is too small or less than four digits");
             }
-            for (int i = 0; i < stringOfNumbers.Length; i++)
+            for (int i = 0; i < number.Length; i++)
             {
-                if (stringOfNumbers[i] < '0' && stringOfNumbers[i] > '9')
+                if (number[i] < '0' && number[i] > '9')
                 {
-                    Console.WriteLine("Only numbers from 0-9 are accepted as input");
+                    throw new Exception("Only numbers from 0-9 are accepted as input");
                 }
             }
         }

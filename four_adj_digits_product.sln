@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.33627.172
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "four_adj_digits_product", "four_adj_digits_product\four_adj_digits_product.csproj", "{57B63478-3031-4752-8602-9392CBFA5E56}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FourAdjDigitsProduct", "four_adj_digits_product\FourAdjDigitsProduct.csproj", "{57B63478-3031-4752-8602-9392CBFA5E56}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

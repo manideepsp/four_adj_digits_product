@@ -4,28 +4,28 @@ using four_adj_digits_product;
 using System;
 
 
-public class MainClass
+public class MainC
 {
     public static void Main()
     {
-        //Number input in string format
-        string stringOfNumbers = Console.ReadLine();
+        //input
+        string number = Console.ReadLine();
 
         //validation
         Validation objectValidation = new Validation();
-        objectValidation.Validate(stringOfNumbers);
+        objectValidation.EdgeCases(number);
 
-        //objects creation
-        IntArrayClass objectIntArray = new IntArrayClass();
-        MaxProductCLass objectMaxProduct = new MaxProductCLass();
+        //objects
+        IntArray objectIntArray = new IntArray();
+        Product objectMaxProduct = new Product();
 
         //maxproduct returns the maximum consective product obtained from the given
         //number which is present in integer array and integer array is given by the
         //method IntArray by converting the input string into integer array
 
-        Console.WriteLine(objectMaxProduct.MaxProduct(objectIntArray.IntArray(stringOfNumbers)));
+        Console.WriteLine(objectMaxProduct.MaxProduct(number));
 
-        Console.ReadKey(); //To keep output window opened till any key is pressed
+        Console.ReadKey(); //keep output window
     }
 }
 
