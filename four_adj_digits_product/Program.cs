@@ -12,7 +12,6 @@
  * *************************************************************************************/
 using four_adj_digits_product;
 using System;
-using System.Numerics;
 
 
 public class MainClass
