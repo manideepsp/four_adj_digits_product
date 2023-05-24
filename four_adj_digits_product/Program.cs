@@ -10,6 +10,7 @@
  * 3. What if any characters other than numericals are given as input, then it
  *    should throw an exception.
  * *************************************************************************************/
+using four_adj_digits_product;
 using System;
 
 public class MainClass
@@ -20,28 +21,12 @@ public class MainClass
         string stringOfNumbers = Console.ReadLine();
         Console.WriteLine(stringOfNumbers);
 
-        int[] numberInt = new int[stringOfNumbers.Length];
+        IntArrayClass objectIntArray = new IntArrayClass();
 
-        for (int i = 0, j = 0; i < stringOfNumbers.Length; i++)
-        {
-            if (stringOfNumbers[i] >= '0' && stringOfNumbers[i] <= '9')
-            {
-                numberInt[j++] = Convert.ToInt32(Convert.ToString(stringOfNumbers[i]));
-            }
-            else
-            {
-                throw new Exception("Enter numericals only");
-            }
-        }
+        MaxProductCLass objectMaxProduct = new MaxProductCLass();
 
-        int maxProduct = 0;
+        Console.WriteLine(objectMaxProduct.MaxProduct(objectIntArray.IntArray(stringOfNumbers)));
 
-        for (int i = 0; i < numberInt.Length - 3; i++)
-        {
-            maxProduct = numberInt[i] * numberInt[i + 1] * numberInt[i + 2] * numberInt[i + 3];
-        }
-
-        Console.WriteLine(maxProduct);
         //Console.WriteLine(numberInt[3]);
         Console.ReadKey();
     }
