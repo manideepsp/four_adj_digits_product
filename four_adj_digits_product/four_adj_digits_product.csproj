@@ -44,6 +44,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="validation.cs" />
     <Compile Include="IntArrayClass.cs" />
     <Compile Include="MaxProduct.cs" />
     <Compile Include="Program.cs" />
