@@ -12,6 +12,7 @@
  * *************************************************************************************/
 using four_adj_digits_product;
 using System;
+using System.Numerics;
 
 
 public class MainClass
@@ -20,7 +21,7 @@ public class MainClass
     {
         //Number input in string format
         string stringOfNumbers = Console.ReadLine();
-        Console.WriteLine(stringOfNumbers);
+
 
         IntArrayClass objectIntArray = new IntArrayClass();
 
