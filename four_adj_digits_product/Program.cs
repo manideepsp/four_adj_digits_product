@@ -13,6 +13,7 @@
 using four_adj_digits_product;
 using System;
 
+
 public class MainClass
 {
     public static void Main()
@@ -25,10 +26,14 @@ public class MainClass
 
         MaxProductCLass objectMaxProduct = new MaxProductCLass();
 
+        //maxproduct returns the maximum consective product obtained from the given
+        //number which is present in integer array and integer array is given by the
+        //method IntArray by converting the input string into integer array
+
         Console.WriteLine(objectMaxProduct.MaxProduct(objectIntArray.IntArray(stringOfNumbers)));
 
         //Console.WriteLine(numberInt[3]);
-        Console.ReadKey();
+        Console.ReadKey(); //To keep output window opened till any key is pressed
     }
 }
 
