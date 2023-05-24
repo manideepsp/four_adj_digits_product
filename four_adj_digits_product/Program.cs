@@ -10,7 +10,10 @@
  * 3. What if any characters other than numericals are given as input, then it
  *    should throw an exception.
  * *************************************************************************************/
+using four_adj_digits_product;
 using System;
+using System.Numerics;
+
 
 public class MainClass
 {
@@ -18,32 +21,20 @@ public class MainClass
     {
         //Number input in string format
         string stringOfNumbers = Console.ReadLine();
-        Console.WriteLine(stringOfNumbers);
 
-        int[] numberInt = new int[stringOfNumbers.Length];
 
-        for (int i = 0, j = 0; i < stringOfNumbers.Length; i++)
-        {
-            if (stringOfNumbers[i] >= '0' && stringOfNumbers[i] <= '9')
-            {
-                numberInt[j++] = Convert.ToInt32(Convert.ToString(stringOfNumbers[i]));
-            }
-            else
-            {
-                throw new Exception("Enter numericals only");
-            }
-        }
+        IntArrayClass objectIntArray = new IntArrayClass();
 
-        int maxProduct = 0;
+        MaxProductCLass objectMaxProduct = new MaxProductCLass();
 
-        for (int i = 0; i < numberInt.Length - 3; i++)
-        {
-            maxProduct = numberInt[i] * numberInt[i + 1] * numberInt[i + 2] * numberInt[i + 3];
-        }
+        //maxproduct returns the maximum consective product obtained from the given
+        //number which is present in integer array and integer array is given by the
+        //method IntArray by converting the input string into integer array
 
-        Console.WriteLine(maxProduct);
+        Console.WriteLine(objectMaxProduct.MaxProduct(objectIntArray.IntArray(stringOfNumbers)));
+
         //Console.WriteLine(numberInt[3]);
-        Console.ReadKey();
+        Console.ReadKey(); //To keep output window opened till any key is pressed
     }
 }
 
