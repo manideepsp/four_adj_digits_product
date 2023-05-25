@@ -3,11 +3,17 @@
 
 namespace four_adj_digits_product
 {
-    //Implements ToIntArray method
+    /// <summary>
+	/// Implements ToIntArray method
+	/// </summary>
     public class IntArray
 	{
-		//Takes string input and returns integer array
-		public int[] ToIntArray(string number)
+        /// <summary>
+        /// Takes string input and returns integer array
+        /// </summary>
+        /// <param name="number"></param>
+        /// <returns></returns>
+        public int[] ToIntArray(string number)
 		{
 			int[] numberInt = new int[number.Length];
 

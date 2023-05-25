@@ -2,10 +2,16 @@
 
 namespace four_adj_digits_product
 {
-    //Implements maximum product function
+    /// <summary>
+    /// Implements maximum product function
+    /// </summary>
     public class Product
     {
-        //Takes integer array and returns maximum of product of four consecutive digits
+        /// <summary>
+        /// Takes integer array and returns maximum of product of four consecutive digits
+        /// </summary>
+        /// <param name="number"></param>
+        /// <returns>"maximumProduct"</returns>
         public int MaxProduct(string number)
         {
             IntArray objectIntArray = new IntArray();

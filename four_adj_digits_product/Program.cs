@@ -19,10 +19,7 @@ public class MainC
         IntArray objectIntArray = new IntArray();
         Product objectMaxProduct = new Product();
 
-        //maxproduct returns the maximum consective product obtained from the given
-        //number which is present in integer array and integer array is given by the
-        //method IntArray by converting the input string into integer array
-
+        //maxproduct returns greatestProduct
         Console.WriteLine(objectMaxProduct.MaxProduct(number));
 
         Console.ReadKey(); //keep output window

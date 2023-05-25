@@ -2,10 +2,16 @@
 
 namespace four_adj_digits_product
 {
-    //Implements edge cases method
+    /// <summary>
+    /// Implements edge cases method
+    /// </summary>
     public class Validation
     {
-        //Check with edge cases and throw any error
+        /// <summary>
+        /// Check with edge cases and throw any error
+        /// </summary>
+        /// <param name="number"></param>
+        /// <exception cref="Exception"></exception>
         public void EdgeCases(string number)
         {
             if (number == null)
